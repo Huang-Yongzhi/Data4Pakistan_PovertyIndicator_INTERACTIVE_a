@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <title>Data4Pak - Poverty</title>
+
+    <!-- Custom styling -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Following this: https://www.d3-graph-gallery.com/graph/boxplot_show_individual_points.html -->
+
+    <!-- Bootstrap grid setup -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h3>
+            Insights from
+            <a href="http://www.data4pakistan.com/" target="_blank"
+              >Pakistan's Data Portal</a
+            >.
+          </h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-8">
+          <h6>Scatter-plot: Relationship between Literacy and Poverty</h6>
+          <select id="geographicChoice" input="dropdown">
+            <option value="allProv">all provinces</option>
+            <option value="Balochistan">Balochistan</option>
+            <option value="Federal Capital Territory"
+              >Federal Capital Territory</option
+            >
+            <option value="Khyber Pakhtunkhwa">KPK</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Sindh">Sindh</option>
+          </select>
+
+          <select id="yearChoice" input="dropdown">
+            <option value="2004">2004</option>
+            <option value="2006">2006</option>
+            <option value="2008">2008</option>
+            <option value="2010">2010</option>
+            <option value="2012">2012</option>
+            <option value="2014">2014</option>
+          </select>
+          <div id="my_dataviz"></div>
+        </div>
+      </div>
+
+      <!-- Beginning of footer -->
+      <div class="row">
+        <div class="col">
+          <h4 id="Footnote1">
+            About This Scatter-plot:
+          </h4>
+          <p></p>
+          <p>
+            The data for this dashboard was obtained from the
+            <a href="http://www.data4pakistan.com/" target="_blank"
+              >Data4Pakistan</a
+            >
+            website. This page is for educational purposes only and the
+            corresponding tutorial can be found here.
+          </p>
+        </div>
+      </div>
+      <!-- End of footer -->
+    </div>
+
+    <!-- External JS libraries -->
+    <script src="js/d3.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom JS -->
+    <script src="js/main_interactive.js"></script>
+  </body>
+</html>
